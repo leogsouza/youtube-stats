@@ -62,7 +62,7 @@ func GetSubscribers() (Items, error) {
 	if err != nil {
 		return Items{}, err
 	}
-
+	fmt.Println(req.URL.RawQuery)
 	return response.Items[0], nil
 
 }
